@@ -1,0 +1,15 @@
+program Project1;
+
+uses
+  Forms,
+  form_login in 'form_login.pas' {login},
+  Unit1 in '..\..\..\..\Program Files (x86)\Borland\Delphi7\Projects\Unit1.pas' {menuutama};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(Tlogin, login);
+  Application.CreateForm(Tmenuutama, menuutama);
+  Application.Run;
+end.
